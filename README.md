@@ -1,4 +1,4 @@
-#MOCHA FIRST DEMO
+MOCHA FIRST DEMO
 
 The objective is having a first contact with creating tests with Mocha
 
