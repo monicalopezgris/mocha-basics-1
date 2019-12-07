@@ -1,17 +1,20 @@
+/* eslint-disable */
 const assert = require('assert');
+const Convert = require('./Convert.js')
 
-describe('Test group 1', function () {
-  describe('#indexOf()', function () {
-    it('should return -1 when the value is not present', function () {
-      assert.equal(-1, [1, 2, 3].indexOf(4));
+describe('Test the conversion functions', () => {
+  describe('cToF', () => {
+    it('should convert -40 celsius to -40 fahrenheit', () => {
+      assert.equal(-40, Convert.cToF(-40));
+    });
+    it('should convert 0 celsius to 32 fahrenheit', () => {
+      assert.equal(32, Convert.cToF(0));
+    });
+    it('should return undefined if no temperature is input', () => {
+      assert.equal(undefined, Convert.cToF(''));
     });
   });
-  describe('sum is 4', () => {
-    it('should return 4', () => {
-      assert.equal(4, 2 + 2);
-    });
-    it('should return true', () => {
-      assert.equal(true, true);
-    });
+  describe('fToC', () => {
+
   });
 });
