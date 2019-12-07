@@ -15,6 +15,15 @@ describe('Test the conversion functions', () => {
     });
   });
   describe('fToC', () => {
+    it('should convert -40 fahrenheit to -40 celsius', () => {
+      assert.equal(-40, Convert.fToC(-40));
+    });
+    it('should convert 50 fahrenheit to 10 celsius', () => {
+      assert.equal(10, Convert.fToC(50));
+    });
+    it('should return undefined if no temperature is input', () => {
+      assert.equal(undefined, Convert.fToC(''));
+    });
 
   });
 });
